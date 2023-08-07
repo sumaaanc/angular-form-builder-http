@@ -83,15 +83,15 @@ export class AppComponent implements OnInit, OnDestroy{
 //   }
 // }
 
-loadData(){
-  this.registerForm.patchValue({    //used only if you need to load data initially for some specific field
-    address:{
-        city: 'Biratnagar',
-        state: 'koshi',
-        postalCode:'1234'
-      }
-  })
-}
+// loadData(){
+//   this.registerForm.patchValue({    //used only if you need to load data initially for some specific field
+//     address:{
+//         city: 'Biratnagar',
+//         state: 'koshi',
+//         postalCode:'1234'
+//       }
+//   })
+// }
 submitForm() {
   if (this.registerForm.valid) {
     const formData = this.registerForm.value;
